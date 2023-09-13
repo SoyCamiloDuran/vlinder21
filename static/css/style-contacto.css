@@ -1,0 +1,81 @@
+.formulario {
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primario);
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (min-width:768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.contacto h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+@media (min-width:480px) {
+    .campo {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .campo{
+        flex: 0 0 calc(50% - .5rem)
+    }
+}
+
+
+
+.campo-nombre, .campo-email, .compo-comentario{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: var(--segundo);
+    color: var(--blanco);
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border:none;
+}
+.boton:hover{
+    cursor: pointer;
+}

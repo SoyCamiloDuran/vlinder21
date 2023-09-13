@@ -1,0 +1,186 @@
+:root{
+    --segundo:#007FE0;
+    --negro:#000000;
+    --principal:#FFD700;
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo:#881014;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: var(--principal);
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+/*globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+h1,h2{
+    font-family: var(--titulos);
+}
+h3, p, a{
+    font-family: var(--parrafos);
+}
+img{
+    max-width: 100%;
+}
+@keyframes desplazamiento {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}
+
+
+/*menu*/
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--segundo);
+    padding: 3rem 4rem;
+    margin-bottom: 5rem;
+}
+nav img{
+    width: 80px;
+    margin: 25px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li{
+    padding: 20px;
+
+}
+nav ul li :hover{
+    padding: 20px;
+    background-color: #585858;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    padding-left: 4rem;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.bordes{
+    border: 3px solid var(--blanco);
+}
+@media(min-width: 768px) {
+    .bordes{
+        border: 4px solid var(--blanco);
+    }
+}
+
+.bordes:hover{
+    color: var(--verde);
+    background-color: var(--blanco);
+}
+.btn-rojo{
+    background-color: var(--segundo);
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sombra {
+    flex: 0 0 calc(33.3% - 1rem);
+    padding: 3rem;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
+}
+
+
+/*footer*/
+.redes-sociales{
+    font-size: 3rem;  
+}
+.redes-sociales a{
+    color: var(--blanco);
+}
+.pie-pagina{
+    margin-top: 5rem;
+    background-color: var(--segundo);
+    padding: 5rem;
+}
+@media(min-width:768px){
+    .contenedor-piepagina{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.info{
+    flex: 0 0 calc(25% - 1rem);
+    margin-bottom: 2rem;
+}
+.info h3, .info p{
+    color: var(--blanco);
+    text-align: center;
+}
+.info h3{
+    font-size: 2.2rem;
+}
+.info p{
+    font-size: 1.8rem;
+}
+.redes-pie{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    background-color: var(--segundo);
+    color: var(--blanco);
+    padding: 2rem;
+    font-size: 2rem;
+}

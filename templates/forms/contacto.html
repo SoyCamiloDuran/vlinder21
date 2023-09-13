@@ -1,0 +1,31 @@
+{% extends '../layouts/base.html' %}
+{% load static %}
+
+{% block newstyle %}
+<link rel="stylesheet" href="{% static 'css/style-contacto.css' %}">
+{% endblock%}
+
+{% block title %} Vlider 21{% endblock  %}
+
+{% block content %}
+<div class="contacto sombra contenedor">
+    <h2>Contacto</h2>
+    <form class="formulario" action="{% url 'contacto' %}" method="POST">
+        <legend>Contactános llenando todos los campos</legend>
+        <div class="contenedor-campos">
+            
+                {% csrf_token %}
+                {{contacto_form}}
+            
+        
+        </div>
+        <div class="enviar">
+            <input class="boton" type="submit" value="Enviar">
+        </div>
+        
+        
+    </form>
+</div>
+
+
+{% endblock%}

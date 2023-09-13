@@ -1,0 +1,103 @@
+.texto-platillos{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.botones-platillos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.botones-platillos button{
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem 3rem;
+}
+
+@media(min-width: 768px) {
+    .botones-platillos{
+        display: inline-block;
+    }
+    .botones-platillos button{
+        flex: unset;
+    }
+}
+
+
+@media(min-width: 768px) {
+    .platillos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+}
+
+/*productos*/
+.sombra h2{
+    text-align: center;
+}
+.sombra p{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.sombra img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+}
+.precio p{
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 15px;
+}
+.precio button{
+    padding:1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--segundo);
+    color: var(--blanco);
+    height: 3.8rem;
+}
+.precio button:hover{
+    cursor: pointer;
+}
+
+.btn-carro{
+    padding:1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--segundo);
+    color: var(--blanco);
+    height: 3.8rem;
+    float: right;
+}
+.btn-carro:hover{
+    cursor: pointer;
+}
+
+.btn-filtros{
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    box-shadow: none;
+    padding: 5px;
+    border: 1px solid var(--segundo);
+}
+
+.btn-filtros a{
+    text-decoration: none;
+}
+
+.btn-filtros:hover{
+    cursor: pointer;
+}

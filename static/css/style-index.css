@@ -1,0 +1,113 @@
+/*sobre nosotros*/
+.contenedor-nosotros{
+    padding-top: 5rem;
+    display: grid;
+    place-items: center;
+}
+@media(min-width: 768px) {
+    .contenedor-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.imagenes-nosotros{
+    flex: 0 0 calc(50% - 1rem) ;
+}
+.texto-nosotros .bienvenida{
+    font-size: 4rem;
+    color: var(--verde);
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .texto-nosotros .bienvenida{
+        text-align: left;
+    }
+}
+.texto-nosotros h1{
+    font-size: 5rem;
+    text-align: center;
+    
+}
+@media(min-width: 768px) {
+    .texto-nosotros h1{
+        text-align: left;
+    }
+}
+.texto-nosotros p{
+    font-size: 2rem;
+    text-align: justify;
+    margin: 5px;
+}
+@media(min-width: 768px) {
+    .texto-nosotros p{
+        text-align: left;
+    }
+}
+.imagenes-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.imagenes-nosotros img{
+    border-radius: 5px;
+}
+.imagen1, .imagenes2{
+    flex: 0 0 calc(50% - 1rem);
+}
+.imagenes2 img{
+    margin-bottom: 1rem;
+}
+.menu{
+    padding-top: 4rem;
+}
+
+/*seccion del chef*/
+.chef h2{
+    background-color: var(--segundo);
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: var(--blanco);
+    font-size: 4rem;
+    border-radius: 5px;
+}
+@media(min-width: 768px) {
+    .contenido-chef{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.a{
+    display: grid;
+    place-items: center;
+}
+
+.imagen-chef{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.imagen-chef img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.texto-chef{
+    display: grid;
+    place-items: center;
+}
+
+.texto-chef h3{
+    font-size: 3rem;
+}
+.texto-chef p{
+    font-size: 2rem;
+}
+.formulario-contacto{
+    padding-top: 5rem;
+}
+
+
+

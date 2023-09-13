@@ -1,0 +1,48 @@
+{% extends '../layouts/base.html' %}
+{% load static %}
+
+{% block newstyle %}
+    <link rel="stylesheet" href="{% static 'css/style-menu.css' %}">
+{% endblock%}
+
+{% block title %} Vlider 21{% endblock  %}
+
+{% block content %}
+    <section class="menu contenedor">
+        <h2 class="texto-platillos">Menú</h2>
+        
+       
+        <div class="botones-platillos">
+            
+            {% for filtro in filtros %}
+                <button class="btn-filtros"><a href="{% url 'productos' filtro.id %}">{{filtro.nombre}}</a></button>
+            {% endfor %}
+              
+        </div>
+
+        <a href="{% url 'carro:carro' %}"><button class="btn-carro"><i class="fas fa-shopping-basket"></i></button></a>
+        
+        
+        
+            
+            <div class="platillos">
+                {% for todo in todos %}
+                <div class="sombra">
+                    
+                    <img src="../../static/img/{{todo.img}}" alt="{{todo.img}}">
+                    <h2>{{todo.nombre}}</h2>
+                    <p>{{todo.descripcion}}</p>
+                    <div class="precio">
+                        <p>$ {{todo.precio}}</p>
+                        
+                        <a href="{% url 'carro:agregar' todo.id %}"><button><i class="fas fa-shopping-basket"></i></button></a>
+                        
+                       
+                    </div>
+                      
+                </div>
+                {% endfor %}
+            </div>
+        
+    </section>
+{% endblock %}

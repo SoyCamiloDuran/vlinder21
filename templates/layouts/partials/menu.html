@@ -1,0 +1,10 @@
+{% load static %}
+
+<nav>
+    <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="logo vlinder"></a>
+    <ul>
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'productos' %}">Menú</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+    </ul>
+</nav>

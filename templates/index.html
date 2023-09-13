@@ -1,0 +1,55 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block newstyle %}
+    <link rel="stylesheet" href="{% static 'css/style-index.css' %}">
+{% endblock%}
+
+{% block title %} Vlider 21{% endblock  %}
+
+{% block content %}
+
+<div class="contenedor-nosotros contenedor sombra">
+    <div class="texto-nosotros">
+        <p class="bienvenida">Bienvenido a!</p>
+        <h1>Vlinder 21</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, fugiat delectus porro suscipit
+            architecto ab impedit accusantium quod voluptate quaerat odio sunt quisquam odit, sapiente aut esse
+            possimus nulla totam!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate eveniet placeat nesciunt harum
+            similique ab, illo debitis ullam ipsa labore quidem vitae sunt et quasi veritatis? Excepturi ex non
+            cumque.
+        </p>
+        <a href="{% url 'productos' %}" class="btn btn-rojo">Ordenar ahora</a>
+    </div>
+    <div class="imagenes-nosotros">
+        <div class="imagen1">
+            <img src="{% static 'img/img4.jpg' %}" alt="logo vlinder" height="555px">
+        </div>
+        <div class="imagenes2">
+            <img src="{% static 'img/img2.jpg' %}" alt="logo vlinder">
+            <img src="{% static 'img/img3.jpg' %}" alt="logo vlinder">
+        </div>
+    </div>
+</div>
+
+<section id="chef" class="chef contenedor sombra">
+    <h2>Chef ejecutivo</h2>
+    <div class="contenido-chef">
+        <div class="texto-chef">
+            <h3>La exelencia está en la diversidad y el modo de progresar
+                es conocer y comparar las diversidades de productos, culturas y
+                técnicas
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis dolores eveniet
+                vitae,
+                natus tempora recusandae hic laborum error ducimus repellat, laudantium temporibus tenetur totam
+                sint
+                consequuntur eligendi! Asperiores, ad.</p>
+        </div>
+        <div class="imagen-chef">
+            <img src="{% static 'img/chef.jpg' %}" alt="logo vlinder">
+        </div>
+    </div>
+</section>
+
+{% endblock %}
